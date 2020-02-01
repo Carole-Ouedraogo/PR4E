@@ -6,19 +6,19 @@ number catch it with a try/except and put out an appropriate message and ignore 
 largest = None
 smallest = None
 while True :
-        num = input('Enter a number: ')
-        if num == "done" :
-            break
-        try:
-            num = int(num)
-        except:
-            print('Invalid input')
-            continue
-        if smallest is None:
-            smallest = num
-        if num > largest :
-            largest = num
-        elif num < smallest :
-            smallest = num
+    num = input('Enter a number: ')
+    if num == "done" :
+        break
+    try:
+        num = int(num)
+    except:
+        print('Invalid input')
+        continue
+    if smallest is None:
+        smallest = num
+    if num > largest :
+        largest = num
+    elif num < smallest :
+        smallest = num
 print("Maximum is", largest)
 print("Minimum is", smallest)
